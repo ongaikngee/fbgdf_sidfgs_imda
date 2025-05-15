@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Morning Bao</title>
+  <style>
+    :root {
+      --color-light: #F9C784;
+      --color-mid: #FCAF58;
+      --color-deep: #FF8C42;
+      --text-dark: #333;
+      --bg-light: #fffaf3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--color-deep);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: var(--color-light);
+    }
+
+    .hero h2 {
+      font-size: 2em;
+    }
+
+    .menu, .locations, .contact {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .menu h3, .locations h3, .contact h3 {
+      color: var(--color-deep);
+      font-size: 1.8em;
+      border-bottom: 3px solid var(--color-mid);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .menu-item h4 {
+      margin: 10px 0 5px;
+      color: var(--color-deep);
+    }
+
+    .menu-item p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .locations ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .locations li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: var(--color-light);
+      border-left: 5px solid var(--color-mid);
+    }
+
+    .contact {
+      background: var(--color-light);
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: var(--color-deep);
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--color-deep);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Morning Bao</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Start Your Morning with a Steamy, Tasty Bao</h2>
+    <p>Freshly made every morning — perfect for your morning rush!</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h3>Our Buns</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h4>Char Siew Bao</h4>
+        <p>$1.50</p>
+      </div>
+      <div class="menu-item">
+        <h4>Lian Yong Bao (Lotus Paste)</h4>
+        <p>$1.30</p>
+      </div>
+      <div class="menu-item">
+        <h4>Kaya Bao</h4>
+        <p>$1.20</p>
+      </div>
+      <div class="menu-item">
+        <h4>Chicken Mushroom Bao</h4>
+        <p>$1.80</p>
+      </div>
+      <div class="menu-item">
+        <h4>Red Bean Bao</h4>
+        <p>$1.20</p>
+      </div>
+      <div class="menu-item">
+        <h4>Salted Egg Custard Bao</h4>
+        <p>$2.00</p>
+      </div>
+      <div class="menu-item">
+        <h4>Vegetable Bao</h4>
+        <p>$1.40</p>
+      </div>
+      <div class="menu-item">
+        <h4>Pork Belly Bao</h4>
+        <p>$2.20</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="locations" id="locations">
+    <h3>Find Us In These Malls</h3>
+    <ul>
+      <li>ION Orchard</li>
+      <li>VivoCity</li>
+      <li>Plaza Singapura</li>
+      <li>NEX Serangoon</li>
+      <li>Jewel Changi Airport</li>
+      <li>Westgate</li>
+      <li>Bugis Junction</li>
+      <li>Northpoint City</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Get in Touch</h3>
+    <p>Follow us for latest bun drops and promotions!</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://tiktok.com" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Morning Bao. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
